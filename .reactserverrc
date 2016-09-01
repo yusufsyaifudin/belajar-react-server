@@ -16,5 +16,6 @@
     "production": {
        "port": "80"
     }
-  }
+  },
+  "webpack-config": "./webpack.config.js"
 }
