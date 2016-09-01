@@ -4,6 +4,7 @@ import {Link, navigateTo} from 'react-server';
 import HelloWorld from '../components/hello-world';
 import Button from '../components/button';
 import {logging} from 'react-server';
+import './../assets/css/button.css'
 
 const logger = logging.getLogger(__LOGGER__);
 
@@ -33,6 +34,7 @@ export default class Repo {
           }
         </ul>
         <br/>
+        <a href="#" className="button">link</a>
         <Link path="/login?id=12" reuseDom={true} bundleData={true}>Navigate to login</Link>
         <Link path="/" reuseDom={true} bundleData={true} class="button">Navigate to home</Link>
       </div>
@@ -50,6 +52,14 @@ export default class Repo {
   }
 
   getHeadStylesheets() {
-        return []
-    }
+    return [
+      "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"
+    ]
+  }
+
+  getScripts() {
+    return [
+      "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"
+    ]
+  }
 }

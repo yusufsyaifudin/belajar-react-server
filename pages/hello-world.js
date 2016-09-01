@@ -17,6 +17,7 @@ export default class SimplePage {
 				<HelloWorld/>
 				<Button href="/login"/>
 				<br/>
+				<a href="#" className="button">link</a>
 				<Link path="/login?id=12" reuseDom={true} bundleData={true}>Navigate to login</Link>
 				<Link path="/repo" reuseDom={true}>Navigate to repo</Link>
 			</div>

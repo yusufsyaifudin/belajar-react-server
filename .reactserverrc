@@ -4,7 +4,7 @@
   "port": 1234,
   "jsPort": 3001,
   "hot": false,
-  "minify": false,
+  "minify": true,
   "longTermCaching": false,
   "compileOnly": false,
   "https": false,
